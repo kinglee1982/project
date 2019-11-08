@@ -1,0 +1,6 @@
+0x00000000	DRV_Cipher_OpenChn	/opt/TM8721/package/drv/cipher/src/hi_cipher	EXPORT_SYMBOL
+0x00000000	HAL_Cipher_GetIntState	/opt/TM8721/package/drv/cipher/src/hi_cipher	EXPORT_SYMBOL
+0x00000000	HAL_Cipher_GetIntEnState	/opt/TM8721/package/drv/cipher/src/hi_cipher	EXPORT_SYMBOL
+0x00000000	DRV_Cipher_CloseChn	/opt/TM8721/package/drv/cipher/src/hi_cipher	EXPORT_SYMBOL
+0x00000000	DRV_Cipher_CreatTask	/opt/TM8721/package/drv/cipher/src/hi_cipher	EXPORT_SYMBOL
+0x00000000	DRV_Cipher_ConfigChn	/opt/TM8721/package/drv/cipher/src/hi_cipher	EXPORT_SYMBOL

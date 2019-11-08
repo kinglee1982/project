@@ -1,0 +1,1 @@
+cmd_/home/users/linux04/tm8721/mpp/drv/mcp4531/mcp4531ctl.ko := arm-hisiv300-linux-ld -EL -r  -T /opt/Hi3521A_SDK_V1.0.3.0/osdrv/opensource/kernel/linux-3.10.y/scripts/module-common.lds --build-id  -o /home/users/linux04/tm8721/mpp/drv/mcp4531/mcp4531ctl.ko /home/users/linux04/tm8721/mpp/drv/mcp4531/mcp4531ctl.o /home/users/linux04/tm8721/mpp/drv/mcp4531/mcp4531ctl.mod.o

@@ -1,0 +1,1 @@
+cmd_/opt/TM8721/package/drv/himedia/hi_media.o := /opt/hisi-linux/x86-arm/arm-hisiv300-linux/bin/arm-hisiv300-linux-uclibcgnueabi-ld -EL    -r -o /opt/TM8721/package/drv/himedia/hi_media.o /opt/TM8721/package/drv/himedia/himedia.o /opt/TM8721/package/drv/himedia/base.o 

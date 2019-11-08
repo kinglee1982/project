@@ -1,0 +1,1 @@
+cmd_/home/users/linux23/av_camera/mpp/drv/hi_i2c_8b/hii2c.o := arm-hisiv300-linux-ld -EL    -r -o /home/users/linux23/av_camera/mpp/drv/hi_i2c_8b/hii2c.o /home/users/linux23/av_camera/mpp/drv/hi_i2c_8b/i2c.o 

@@ -1,0 +1,1 @@
+cmd_/opt/TM8721/package/drv/cipher/src/hi_cipher.ko := /opt/hisi-linux/x86-arm/arm-hisiv300-linux/bin/arm-hisiv300-linux-uclibcgnueabi-ld -EL -r  -T /opt/TM8721/linux-3.10.y/scripts/module-common.lds --build-id  -o /opt/TM8721/package/drv/cipher/src/hi_cipher.ko /opt/TM8721/package/drv/cipher/src/hi_cipher.o /opt/TM8721/package/drv/cipher/src/hi_cipher.mod.o

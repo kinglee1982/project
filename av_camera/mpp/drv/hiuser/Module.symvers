@@ -1,0 +1,4 @@
+0x00000000	hi_dma_map_area	/opt/TM8721/package/drv/hiuser/hiuser	EXPORT_SYMBOL
+0x00000000	hi_sched_setscheduler	/opt/TM8721/package/drv/hiuser/hiuser	EXPORT_SYMBOL
+0x00000000	hi_user_notify_vdec_event	/opt/TM8721/package/drv/hiuser/hiuser	EXPORT_SYMBOL
+0x00000000	hi_user_notify_vou_event	/opt/TM8721/package/drv/hiuser/hiuser	EXPORT_SYMBOL

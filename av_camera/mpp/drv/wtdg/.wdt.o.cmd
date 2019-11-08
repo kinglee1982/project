@@ -1,0 +1,1 @@
+cmd_/opt/TM8721/package/drv/wtdg/wdt.o := /opt/hisi-linux/x86-arm/arm-hisiv300-linux/bin/arm-hisiv300-linux-uclibcgnueabi-ld -EL    -r -o /opt/TM8721/package/drv/wtdg/wdt.o /opt/TM8721/package/drv/wtdg/hi_wdt.o 

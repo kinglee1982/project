@@ -1,0 +1,1 @@
+cmd_/home/users/linux23/av_camera/mpp/drv/gpio/gpio.ko := arm-hisiv300-linux-ld -EL -r  -T /opt/Hi3521A_SDK_V1.0.3.0/osdrv/opensource/kernel/linux-3.10.y/scripts/module-common.lds --build-id  -o /home/users/linux23/av_camera/mpp/drv/gpio/gpio.ko /home/users/linux23/av_camera/mpp/drv/gpio/gpio.o /home/users/linux23/av_camera/mpp/drv/gpio/gpio.mod.o

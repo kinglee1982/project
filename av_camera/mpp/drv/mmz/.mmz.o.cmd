@@ -1,0 +1,1 @@
+cmd_/opt/TM8721/package/drv/mmz/mmz.o := /opt/hisi-linux/x86-arm/arm-hisiv300-linux/bin/arm-hisiv300-linux-uclibcgnueabi-ld -EL    -r -o /opt/TM8721/package/drv/mmz/mmz.o /opt/TM8721/package/drv/mmz/media-mem.o /opt/TM8721/package/drv/mmz/mmz-userdev.o 

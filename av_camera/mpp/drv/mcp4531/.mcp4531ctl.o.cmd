@@ -1,0 +1,1 @@
+cmd_/home/users/linux04/tm8721/mpp/drv/mcp4531/mcp4531ctl.o := arm-hisiv300-linux-ld -EL    -r -o /home/users/linux04/tm8721/mpp/drv/mcp4531/mcp4531ctl.o /home/users/linux04/tm8721/mpp/drv/mcp4531/mcp4531.o 

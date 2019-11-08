@@ -1,0 +1,9 @@
+---- TW2968_PAL Matches (8 in 2 files) ----
+tw2968.c (Y:\tm8721\mpp\extdrv\tw2960):static int norm = TW2968_PAL;
+tw2968.c (Y:\tm8721\mpp\extdrv\tw2960):    if (TW2968_PAL == mode) //For WD1 only
+tw2968.c (Y:\tm8721\mpp\extdrv\tw2960):    	    if ((video_norm.mode != TW2968_NTSC) && (video_norm.mode != TW2968_PAL))
+tw2968.c (Y:\tm8721\mpp\extdrv\tw2960):                video_norm.mode = TW2968_PAL;
+tw2968.c (Y:\tm8721\mpp\extdrv\tw2960):	if (mode == TW2968_PAL)
+tw2968.c (Y:\tm8721\mpp\extdrv\tw2960):	if ((norm != TW2968_PAL) && (norm != TW2968_NTSC))
+tw2968.c (Y:\tm8721\mpp\extdrv\tw2960):		printk("module param norm must be PAL(%d) or NTSC(%d)\n", TW2968_PAL ,TW2968_NTSC);
+tw2968.h (Y:\tm8721\mpp\extdrv\tw2960):#define TW2968_PAL	        2

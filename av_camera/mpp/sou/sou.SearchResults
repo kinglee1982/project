@@ -1,0 +1,260 @@
+---- PAL Matches (261 in 26 files) ----
+common.h (extdrv\nvp6124):#define PAL			0x01
+common.h (extdrv\nvp6124):#define PALADDR 		0x0100
+hi_comm_hdmi.h (include):    HI_HDMI_VIDEO_FMT_PAL,                  /* B D G H I PAL */
+hi_comm_hdmi.h (include):    HI_HDMI_VIDEO_FMT_PAL_N,                /* (N)PAL        */
+hi_comm_hdmi.h (include):    HI_HDMI_VIDEO_FMT_PAL_Nc,               /* (Nc)PAL       */
+hi_comm_hdmi.h (include):    HI_HDMI_VIDEO_FMT_NTSC_PAL_M,           /* (M)PAL        */
+hi_comm_video.h (include):    VIDEO_ENCODING_MODE_PAL=0,
+hi_comm_vo.h (include):    VO_OUTPUT_PAL = 0,
+hi_comm_vo.h (include):    VO_OUTPUT_960H_PAL,              /* ITU-R BT.1302 960 x 576 at 50 Hz (interlaced)*/
+jerror.h (include):JMESSAGE(JTRC_THUMB_PALETTE,       "")
+jerror.h (include):JMESSAGE(JTRC_THUMB_PALETTE,
+nvp6114.h (sample\common):#define VDEC_PAL	        2
+nvp6114.h (sample\common):#define	VIDEO_PAL_960_4CH	7
+nvp6114.h (sample\common):#define	VIDEO_PAL_960_720P	9
+nvp6114.h (sample\common):#define	VIDEO_PAL_720P_960	11
+nvp6114.h (sample\common):#define	VIDEO_PAL_720P_2CH	37
+nvp6114.h (sample\common):		NVC1700_VM_PAL,
+nvp6114.h (sample\common):	NVP6114_INPUT_VIDEOFMT_SD_PAL,
+nvp6124.h (extdrv\nvp6124):#define PAL			0x01
+nvp6124_drv.c (extdrv\nvp6124):unsigned int nvp6124_mode = PAL;  //0:ntsc, 1: pal
+nvp6124_drv.c (extdrv\nvp6124):						vmode.vformat[0] = PAL;  //only use one video format.
+nvp6124_drv.c (extdrv\nvp6124):						vmode.vformat[0] = PAL;
+nvp6124_drv.c (extdrv\nvp6124):						vmode.vformat[0] = PAL;
+nvp6124_drv.c (extdrv\nvp6124):						vmode.vformat[0] = PAL;
+nvp6124_drv.c (extdrv\nvp6124):						vmode.vformat[0] = PAL;
+nvp6124_drv.c (extdrv\nvp6124):				printk("\r\n common %s inited\n",nvp6124_mode%2?"PAL":"NTSC");
+nvp6124_drv.c (extdrv\nvp6124):				printk("\r\n common %s inited\n",nvp6124_mode%2?"PAL":"NTSC");
+nvp6124_reg.h (extdrv\nvp6124):unsigned char NVP6124_B0_PAL_Buf[] = {
+nvp6124_reg.h (extdrv\nvp6124):unsigned char NVP6124_B5678_PAL_Buf[] = {
+sample_comm.h (sample\common)://#define SAMPLE_GLOBAL_NORM	    VIDEO_ENCODING_MODE_PAL
+sample_comm_sys.c (sample\common):            pstSize->u32Height = (VIDEO_ENCODING_MODE_PAL==enNorm)?144:120;
+sample_comm_sys.c (sample\common):            pstSize->u32Height = (VIDEO_ENCODING_MODE_PAL==enNorm)?288:240;
+sample_comm_sys.c (sample\common):            pstSize->u32Height = (VIDEO_ENCODING_MODE_PAL==enNorm)?576:480;
+sample_comm_sys.c (sample\common):            pstSize->u32Height = (VIDEO_ENCODING_MODE_PAL==enNorm)?576:480;
+sample_comm_sys.c (sample\common):            pstSize->u32Height = (VIDEO_ENCODING_MODE_PAL==enNorm)?576:480;
+sample_comm_vdec.c (sample\common):        pstVoPubAttr->enIntfSync = VO_OUTPUT_PAL;
+sample_comm_vdec.c (sample\common):    else if (pstVoPubAttr->enIntfSync == VO_OUTPUT_PAL)
+sample_comm_vdec.c (sample\common):        pstPubAttr->enIntfSync = VO_OUTPUT_PAL;
+sample_comm_venc.c (sample\common):                stH264Cbr.u32Gop            = (VIDEO_ENCODING_MODE_PAL== enNorm)?25:30;
+sample_comm_venc.c (sample\common):                stH264Cbr.u32SrcFrmRate      = (VIDEO_ENCODING_MODE_PAL== enNorm)?25:30;/* input (vi) frame rate */
+sample_comm_venc.c (sample\common):                stH264Cbr.fr32DstFrmRate = (VIDEO_ENCODING_MODE_PAL== enNorm)?25:30;/* target frame rate */
+sample_comm_venc.c (sample\common):                stH264FixQp.u32Gop = (VIDEO_ENCODING_MODE_PAL== enNorm)?25:30;
+sample_comm_venc.c (sample\common):                stH264FixQp.u32SrcFrmRate = (VIDEO_ENCODING_MODE_PAL== enNorm)?25:30;
+sample_comm_venc.c (sample\common):                stH264FixQp.fr32DstFrmRate = (VIDEO_ENCODING_MODE_PAL== enNorm)?25:30;
+sample_comm_venc.c (sample\common):                stH264Vbr.u32Gop = (VIDEO_ENCODING_MODE_PAL== enNorm)?25:30;
+sample_comm_venc.c (sample\common):                stH264Vbr.u32SrcFrmRate = (VIDEO_ENCODING_MODE_PAL== enNorm)?25:30;
+sample_comm_venc.c (sample\common):                stH264Vbr.fr32DstFrmRate = (VIDEO_ENCODING_MODE_PAL== enNorm)?25:30;
+sample_comm_venc.c (sample\common):                stMjpegeFixQp.u32SrcFrmRate      = (VIDEO_ENCODING_MODE_PAL== enNorm)?25:30;
+sample_comm_venc.c (sample\common):                stMjpegeFixQp.fr32DstFrmRate = (VIDEO_ENCODING_MODE_PAL== enNorm)?25:30;
+sample_comm_venc.c (sample\common):                stVencChnAttr.stRcAttr.stAttrMjpegeCbr.u32SrcFrmRate      = (VIDEO_ENCODING_MODE_PAL== enNorm)?25:30;
+sample_comm_venc.c (sample\common):                stVencChnAttr.stRcAttr.stAttrMjpegeCbr.fr32DstFrmRate = (VIDEO_ENCODING_MODE_PAL== enNorm)?25:30;
+sample_comm_venc.c (sample\common):                stVencChnAttr.stRcAttr.stAttrMjpegeVbr.u32SrcFrmRate = (VIDEO_ENCODING_MODE_PAL == enNorm)?25:30;
+sample_comm_vi.c (sample\common):    video_mode = (VIDEO_ENCODING_MODE_PAL == enVideoMode) ? TW2865_PAL : TW2865_NTSC ;
+sample_comm_vi.c (sample\common):    video_mode = (VIDEO_ENCODING_MODE_PAL == enVideoMode) ? TW2960_PAL : TW2960_NTSC ;
+sample_comm_vi.c (sample\common):    video_mode = (VIDEO_ENCODING_MODE_PAL == enVideoMode) ? 1 : 0 ;
+sample_comm_vi.c (sample\common):    video_mode = (VIDEO_ENCODING_MODE_PAL == enVideoMode) ? 1 : 0 ;
+sample_comm_vi.c (sample\common):            pstDestSize->u32Height = (VIDEO_ENCODING_MODE_PAL==enNorm)?576:480;
+sample_comm_vi.c (sample\common):            pstCapRect->u32Height = (VIDEO_ENCODING_MODE_PAL==enNorm)?576:480;
+sample_comm_vi.c (sample\common):            pstDestSize->u32Height = (VIDEO_ENCODING_MODE_PAL==enNorm)?576:480;
+sample_comm_vi.c (sample\common):            pstCapRect->u32Height = (VIDEO_ENCODING_MODE_PAL==enNorm)?576:480;
+sample_comm_vo.c (sample\common):        case VO_OUTPUT_PAL       :  *pu32W = 720;  *pu32H = 576;  *pu32Frm = 25; break;
+sample_comm_vo.c (sample\common):        case VO_OUTPUT_PAL:
+sample_comm_vo.c (sample\common):            *penVideoFmt = HI_HDMI_VIDEO_FMT_PAL;
+sample_it.c (sample\it):    s_u32ViFrmRate = (VIDEO_ENCODING_MODE_PAL == s_enNorm) ? 25 : 30;
+sample_it.c (sample\it):    s_u32D1Height = (VIDEO_ENCODING_MODE_PAL == s_enNorm) ? 576 : 480;
+sample_it.c (sample\it):    stVoPubAttr.enIntfSync = (VIDEO_ENCODING_MODE_NTSC == enVideoNorm) ? VO_OUTPUT_NTSC : VO_OUTPUT_PAL;
+sample_it.c (sample\it):    if(VIDEO_ENCODING_MODE_PAL == s_enNorm)
+sample_ive_bg_model.c (sample\ive\sample):    VIDEO_NORM_E enVideoNorm = VIDEO_ENCODING_MODE_PAL;
+sample_ive_gmm.c (sample\ive\sample):    VIDEO_NORM_E enVideoNorm = VIDEO_ENCODING_MODE_PAL;
+sample_ivs_md.c (sample\ive\sample):	VIDEO_NORM_E enVideoNorm = VIDEO_ENCODING_MODE_PAL;
+sample_region.c (sample\region):        case VO_OUTPUT_PAL      :    u32Width = 720;  u32Height = 576;  u32Frmt = 25; break;
+sample_vda.c (sample\vda):VIDEO_NORM_E gs_enNorm = VIDEO_ENCODING_MODE_PAL;
+sample_vda.c (sample\vda):        case VO_OUTPUT_PAL      :    u32Width = 720;  u32Height = 576;  u32Frmt = 25; break;
+sample_vda.c (sample\vda):    enIntfSync  = VO_OUTPUT_PAL;
+sample_vda.c (sample\vda):    enIntfSync  = VO_OUTPUT_PAL;
+sample_venc.c (sample\venc):	    stRoiBgFrameRate.s32SrcFrmRate = (VIDEO_ENCODING_MODE_PAL== gs_enNorm)?25:30;
+sample_venc.c (sample\venc):	    stRoiBgFrameRate.s32DstFrmRate = (VIDEO_ENCODING_MODE_PAL== gs_enNorm)?5:15;
+sample_vio.c (sample\vio):	VIDEO_NORM_E enNorm = VIDEO_ENCODING_MODE_PAL;
+sample_vio.c (sample\vio):	stVoPubAttr.enIntfSync = VO_OUTPUT_PAL;
+sample_vio.c (sample\vio):    s32Ret = SAMPLE_COMM_VO_GetWH(VO_OUTPUT_PAL, \
+sample_vio.c (sample\vio):    s32Ret = SAMPLE_COMM_VO_GetWH(VO_OUTPUT_PAL, \
+sample_vio.c (sample\vio):	stVoPubAttr.enIntfSync = VO_OUTPUT_PAL;
+sample_vio.c (sample\vio):	s32Ret = SAMPLE_COMM_SYS_GetPicSize(VIDEO_ENCODING_MODE_PAL, PIC_CIF, &stSize);
+tp2823.c (extdrv\tp2823):static void TP2823_PAL_DataSet(unsigned char addr)
+tp2823.c (extdrv\tp2823):                                wdi-> mode[i] = TP2802_PAL;
+tp2823.c (extdrv\tp2823):                                TP2823_PAL_DataSet(wdi->addr);
+tp2823.c (extdrv\tp2823):                                printk("set PAL format ch%02x addr%2x\r\n", i, wdi->addr );
+tp2823.c (extdrv\tp2823):                                if ((TP2802_PAL == wdi-> mode[i]) || (TP2802_NTSC == wdi-> mode[i]))
+tp2823.h (extdrv\tp2823):TP2802_PAL	   =        0x08,
+video.c (extdrv\nvp6124):#define BRI_CENTER_VAL_PAL  0xF4
+video.c (extdrv\nvp6124):#define CON_CENTER_VAL_PAL  0x90
+video.c (extdrv\nvp6124):#define SAT_CENTER_VAL_PAL  0x80
+video.c (extdrv\nvp6124):#define HUE_CENTER_VAL_PAL  0x00
+video.c (extdrv\nvp6124):#define BRI_CENTER_VAL_PAL_720P  0x08
+video.c (extdrv\nvp6124):#define CON_CENTER_VAL_PAL_720P  0x88
+video.c (extdrv\nvp6124):#define SAT_CENTER_VAL_PAL_720P  0x90
+video.c (extdrv\nvp6124):#define HUE_CENTER_VAL_PAL_720P  0x00
+video.c (extdrv\nvp6124):#define BRI_CENTER_VAL_PAL_960H  0x00
+video.c (extdrv\nvp6124):#define CON_CENTER_VAL_PAL_960H  0x90
+video.c (extdrv\nvp6124):#define SAT_CENTER_VAL_PAL_960H  0x88
+video.c (extdrv\nvp6124):#define HUE_CENTER_VAL_PAL_960H  0x00
+video.c (extdrv\nvp6124):unsigned int nvp6124_con_tbl[2]  = {CON_CENTER_VAL_NTSC, CON_CENTER_VAL_PAL};
+video.c (extdrv\nvp6124):unsigned int nvp6124_hue_tbl[2]  = {HUE_CENTER_VAL_NTSC, HUE_CENTER_VAL_PAL};
+video.c (extdrv\nvp6124):unsigned int nvp6124_sat_tbl[2]  = {SAT_CENTER_VAL_NTSC, SAT_CENTER_VAL_PAL};
+video.c (extdrv\nvp6124):unsigned int nvp6124_bri_tbl[2]  = {BRI_CENTER_VAL_NTSC, BRI_CENTER_VAL_PAL};
+video.c (extdrv\nvp6124):unsigned int nvp6124_con_tbl_720P[2]  = {CON_CENTER_VAL_NTSC_720P, CON_CENTER_VAL_PAL_720P};
+video.c (extdrv\nvp6124):unsigned int nvp6124_hue_tbl_720P[2]  = {HUE_CENTER_VAL_NTSC_720P, HUE_CENTER_VAL_PAL_720P};
+video.c (extdrv\nvp6124):unsigned int nvp6124_sat_tbl_720P[2]  = {SAT_CENTER_VAL_NTSC_720P, SAT_CENTER_VAL_PAL_720P};
+video.c (extdrv\nvp6124):unsigned int nvp6124_bri_tbl_720P[2]  = {BRI_CENTER_VAL_NTSC_720P, BRI_CENTER_VAL_PAL_720P};
+video.c (extdrv\nvp6124):unsigned int nvp6124_con_tbl_960H[2]  = {CON_CENTER_VAL_NTSC_960H, CON_CENTER_VAL_PAL_960H};
+video.c (extdrv\nvp6124):unsigned int nvp6124_hue_tbl_960H[2]  = {HUE_CENTER_VAL_NTSC_960H, HUE_CENTER_VAL_PAL_960H};
+video.c (extdrv\nvp6124):unsigned int nvp6124_sat_tbl_960H[2]  = {SAT_CENTER_VAL_NTSC_960H, SAT_CENTER_VAL_PAL_960H};
+video.c (extdrv\nvp6124):unsigned int nvp6124_bri_tbl_960H[2]  = {BRI_CENTER_VAL_NTSC_960H, BRI_CENTER_VAL_PAL_960H};
+video.c (extdrv\nvp6124):				I2CWriteByte(nvp6124_slave_addr[i/4], 0x21+4*(i%4), nvp6124_mode%2==PAL?0x22:0xA2);
+video.c (extdrv\nvp6124):				I2CWriteByte(nvp6124_slave_addr[i/4], 0x21+4*(i%4), nvp6124_mode%2==PAL?0x02:0x82);
+video.c (extdrv\nvp6124):vformat:0->NTSC, 1->PAL
+video.c (extdrv\nvp6124):vformat:0->NTSC, 1->PAL
+video.c (extdrv\nvp6124):vformat:0->NTSC, 1->PAL
+video.c (extdrv\nvp6124):vformat:0->NTSC, 1->PAL
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x08+ch%4, vformat==PAL?0xDD:0xA0);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x14+ch%4, vformat==PAL?0x80:0x80);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x18+ch%4, vformat==PAL?0x18:0x18);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x21+4*(ch%4), vformat==PAL?0x02:0x82);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x30+ch%4, vformat==PAL?0x12:0x11);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x44+ch%4, vformat==PAL?0x00:0x00);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x48+ch%4, vformat==PAL?0x00:0x00);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x4c+ch%4, vformat==PAL?0x04:0x00);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x50+ch%4, vformat==PAL?0x04:0x00);
+video.c (extdrv\nvp6124):						I2CWriteByte(nvp6124_slave_addr[ch/4], 0x58+ch%4, vformat==PAL?0x80:0x90);
+video.c (extdrv\nvp6124):						I2CWriteByte(nvp6124_slave_addr[ch/4], 0x58+ch%4, vformat==PAL?0xB0:0x40);
+video.c (extdrv\nvp6124):						I2CWriteByte(nvp6124_slave_addr[ch/4], 0x58+ch%4, vformat==PAL?0x80:0x90);
+video.c (extdrv\nvp6124):						I2CWriteByte(nvp6124_slave_addr[ch/4], 0x58+ch%4, vformat==PAL?0x90:0xA0);
+video.c (extdrv\nvp6124):						I2CWriteByte(nvp6124_slave_addr[ch/4], 0x58+ch%4, vformat==PAL?0x3B:0x4B);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x5c+ch%4, vformat==PAL?0x1e:0x1e);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x64+ch%4, vformat==PAL?0x0d:0x08);
+video.c (extdrv\nvp6124):		 				I2CWriteByte(nvp6124_slave_addr[ch/4], 0x81+ch%4, vformat==PAL?0x00:0x00);
+video.c (extdrv\nvp6124):		 				I2CWriteByte(nvp6124_slave_addr[ch/4], 0x85+ch%4, vformat==PAL?0x11:0x11);
+video.c (extdrv\nvp6124):		 					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x89+ch%4, vformat==PAL?0x11:0x11);
+video.c (extdrv\nvp6124):		 					I2CWriteByte(nvp6124_slave_addr[ch/4], ch%4+0x8E, vformat==PAL?0x20:0x00);
+video.c (extdrv\nvp6124):		 				I2CWriteByte(nvp6124_slave_addr[ch/4], 0x89+ch%4, vformat==PAL?0x10:0x00);
+video.c (extdrv\nvp6124):		 				I2CWriteByte(nvp6124_slave_addr[ch/4], ch%4+0x8E, vformat==PAL?0x08:0x07);
+video.c (extdrv\nvp6124):		 				I2CWriteByte(nvp6124_slave_addr[ch/4], 0x81+ch%4, vformat==PAL?0x20:0x20);
+video.c (extdrv\nvp6124):		 				I2CWriteByte(nvp6124_slave_addr[ch/4], 0x85+ch%4, vformat==PAL?0x00:0x00);
+video.c (extdrv\nvp6124):		 				I2CWriteByte(nvp6124_slave_addr[ch/4], 0x89+ch%4, vformat==PAL?0x10:0x10);
+video.c (extdrv\nvp6124):		 				I2CWriteByte(nvp6124_slave_addr[ch/4], ch%4+0x8E, vformat==PAL?0x17:0x17);
+video.c (extdrv\nvp6124):		 				I2CWriteByte(nvp6124_slave_addr[ch/4], 0x81+ch%4, vformat==PAL?0x30:0x30);
+video.c (extdrv\nvp6124):		 				I2CWriteByte(nvp6124_slave_addr[ch/4], 0x85+ch%4, vformat==PAL?0x00:0x00);
+video.c (extdrv\nvp6124):		 				I2CWriteByte(nvp6124_slave_addr[ch/4], 0x89+ch%4, vformat==PAL?0x10:0x10);
+video.c (extdrv\nvp6124):		 				I2CWriteByte(nvp6124_slave_addr[ch/4], ch%4+0x8E, vformat==PAL?0x0B:0x0B);
+video.c (extdrv\nvp6124):		 				I2CWriteByte(nvp6124_slave_addr[ch/4], 0x81+ch%4, vformat==PAL?0x40:0x40);
+video.c (extdrv\nvp6124):		 				I2CWriteByte(nvp6124_slave_addr[ch/4], 0x85+ch%4, vformat==PAL?0x00:0x00);
+video.c (extdrv\nvp6124):		 				I2CWriteByte(nvp6124_slave_addr[ch/4], 0x89+ch%4, vformat==PAL?0x00:0x00);
+video.c (extdrv\nvp6124):		 				I2CWriteByte(nvp6124_slave_addr[ch/4], ch%4+0x8E, vformat==PAL?0x10:0x10);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x98+ch%4, vformat==PAL?0x05:0x04); //hzoom ration
+video.c (extdrv\nvp6124):	 				I2CWriteByte(nvp6124_slave_addr[ch/4], 0xa0+ch%4, vformat==PAL?0x00:0x10);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0xa4+ch%4, vformat==PAL?0x00:0x01);
+video.c (extdrv\nvp6124):						I2CWriteByte(nvp6124_slave_addr[ch/4], 0x88+ch%4, vformat==PAL?0x7e:0x7e);
+video.c (extdrv\nvp6124):						I2CWriteByte(nvp6124_slave_addr[ch/4], 0x8c+ch%4, vformat==PAL?0x26:0x26);
+video.c (extdrv\nvp6124):						I2CWriteByte(nvp6124_slave_addr[ch/4], 0x88+ch%4, vformat==PAL?0x7e:0x7e);
+video.c (extdrv\nvp6124):						I2CWriteByte(nvp6124_slave_addr[ch/4], 0x8c+ch%4, vformat==PAL?0x56:0x56);
+video.c (extdrv\nvp6124):						I2CWriteByte(nvp6124_slave_addr[ch/4], 0x88+ch%4, vformat==PAL?0x7e:0x7e);
+video.c (extdrv\nvp6124):						I2CWriteByte(nvp6124_slave_addr[ch/4], 0x8c+ch%4, vformat==PAL?0x56:0x56);
+video.c (extdrv\nvp6124):						I2CWriteByte(nvp6124_slave_addr[ch/4], 0x88+ch%4, vformat==PAL?0x46:0x46);
+video.c (extdrv\nvp6124):						I2CWriteByte(nvp6124_slave_addr[ch/4], 0x8c+ch%4, vformat==PAL?0x47:0x47);
+video.c (extdrv\nvp6124):					nvp6124_write_table( nvp6124_slave_addr[ch/4], 0x00, vformat==PAL?NVP6124_B5678_PAL_Buf:NVP6124_B5678_NTSC_Buf, 254 );
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x25,vformat==PAL?0xCA:0xDA);
+video.c (extdrv\nvp6124):						I2CWriteByte(nvp6124_slave_addr[ch/4], 0x62, vformat==PAL?0x20:0x20);
+video.c (extdrv\nvp6124):						I2CWriteByte(nvp6124_slave_addr[ch/4], 0x64, vformat==PAL?0x0D:0x0D);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x50+4*(ch%4),vformat==PAL?pn_value_sd_pal_comet[0]:pn_value_sd_nt_comet[0]);	//ch%41 960H
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x51+4*(ch%4),vformat==PAL?pn_value_sd_pal_comet[1]:pn_value_sd_nt_comet[1]);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x52+4*(ch%4),vformat==PAL?pn_value_sd_pal_comet[2]:pn_value_sd_nt_comet[2]);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x53+4*(ch%4),vformat==PAL?pn_value_sd_pal_comet[3]:pn_value_sd_nt_comet[3]);
+video.c (extdrv\nvp6124):					printk("ch %d setted to %d %s\n", ch, chmode[ch], vformat==PAL?"PAL":"NTSC");
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x08+ch%4,vformat==PAL?0x60:0x60);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x14+ch%4,vformat==PAL?0x90:0x90);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x18+ch%4,vformat==PAL?0x30:0x30);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x30+ch%4,vformat==PAL?0x12:0x12);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x44+ch%4,vformat==PAL?0x18:0x18);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x48+ch%4,vformat==PAL?0x18:0x18);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x4c+ch%4,vformat==PAL?0x04:0x04);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x50+ch%4,vformat==PAL?0x04:0x04);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x58+ch%4,vformat==PAL?0x80:0x90);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x5c+ch%4,vformat==PAL?0x9e:0x9e);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x64+ch%4,vformat==PAL?0xb1:0xb2);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x81+ch%4,vformat==PAL?0x07:0x06);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x85+ch%4,vformat==PAL?0x00:0x00);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x89+ch%4,vformat==PAL?0x10:0x10);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], ch%4+0x8E,vformat==PAL?0x0d:0x0d);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x98+ch%4,vformat==PAL?0x07:0x04);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0xa0+ch%4,vformat==PAL?0x00:0x00);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0xa4+ch%4,vformat==PAL?0x00:0x01);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x88+ch%4,vformat==PAL?0x5C:0x5C);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x8c+ch%4,vformat==PAL?0x40:0x40);
+video.c (extdrv\nvp6124):					nvp6124_write_table( nvp6124_slave_addr[ch/4], 0x00, vformat==PAL?NVP6124_B5678_25P_Buf:NVP6124_B5678_30P_Buf,254 );
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x50+4*(ch%4),vformat==PAL?pn_value_720p_25[0]:pn_value_720p_30[0]);	//ch%41 960H
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x51+4*(ch%4),vformat==PAL?pn_value_720p_25[1]:pn_value_720p_30[1]);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x52+4*(ch%4),vformat==PAL?pn_value_720p_25[2]:pn_value_720p_30[2]);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x53+4*(ch%4),vformat==PAL?pn_value_720p_25[3]:pn_value_720p_30[3]);
+video.c (extdrv\nvp6124):					printk("ch %d setted to 720P %s\n", ch, vformat==PAL?"PAL":"NTSC");
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x08+ch%4,vformat==PAL?0x60:0x60);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x14+ch%4,vformat==PAL?0x90:0x90);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x18+ch%4,vformat==PAL?0x00:0x00);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x23+4*(ch%4), vformat==PAL?0x43:0x43);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x30+ch%4,vformat==PAL?0x12:0x12);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x44+ch%4,vformat==PAL?0x18:0x18);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x48+ch%4,vformat==PAL?0x18:0x18);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x4c+ch%4,vformat==PAL?0x04:0x04);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x50+ch%4,vformat==PAL?0x04:0x04);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x58+ch%4,vformat==PAL?0xc0:0xb0);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x5c+ch%4,vformat==PAL?0x9e:0x9e);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x64+ch%4,vformat==PAL?0xb1:0xb2);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x81+ch%4,vformat==PAL?0x05:0x04);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x85+ch%4,vformat==PAL?0x00:0x00);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x89+ch%4,vformat==PAL?0x10:0x10);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], ch%4+0x8E,vformat==PAL?0x0b:0x09);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x98+ch%4,vformat==PAL?0x07:0x04);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0xa0+ch%4,vformat==PAL?0x00:0x00);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0xa4+ch%4,vformat==PAL?0x00:0x01);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x88+ch%4,vformat==PAL?0x4d:0x4d);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x8c+ch%4,vformat==PAL?0x84:0x84);
+video.c (extdrv\nvp6124):					nvp6124_write_table( nvp6124_slave_addr[ch/4], 0x00, vformat==PAL?NVP6124_B5678_25P_Buf:NVP6124_B5678_30P_Buf,254 );
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x24,vformat==PAL?0x2A:0x1A);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x50,vformat==PAL?0x84:0x86);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0xBB,vformat==PAL?0x00:0xE4);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x50+4*(ch%4),vformat==PAL?pn_value_720p_50[0]:pn_value_720p_60[0]);	//ch%41 960H
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x51+4*(ch%4),vformat==PAL?pn_value_720p_50[1]:pn_value_720p_60[1]);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x52+4*(ch%4),vformat==PAL?pn_value_720p_50[2]:pn_value_720p_60[2]);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x53+4*(ch%4),vformat==PAL?pn_value_720p_50[3]:pn_value_720p_60[3]);
+video.c (extdrv\nvp6124):					printk("ch %d setted to 720P@RT %s\n", ch, vformat==PAL?"PAL":"NTSC");
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x08+ch%4,vformat==PAL?0x60:0x60);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x14+ch%4,vformat==PAL?0x90:0x90);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x18+ch%4,vformat==PAL?0x00:0x00);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x23+4*(ch%4), vformat==PAL?0x43:0x43);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x30+ch%4,vformat==PAL?0x12:0x12);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x44+ch%4,vformat==PAL?0x18:0x18);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x48+ch%4,vformat==PAL?0x18:0x18);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x4c+ch%4,vformat==PAL?0x00:0x00);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x50+ch%4,vformat==PAL?0x00:0x00);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x58+ch%4,vformat==PAL?0x6a:0x49);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x5c+ch%4,vformat==PAL?0x9e:0x9e);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x64+ch%4,vformat==PAL?0xbf:0x8d);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x81+ch%4,vformat==PAL?0x03:0x02);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x85+ch%4,vformat==PAL?0x00:0x00);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x89+ch%4,vformat==PAL?0x10:0x10);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], ch%4+0x8E,vformat==PAL?0x0a:0x09);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x98+ch%4,vformat==PAL?0x07:0x04);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0xa0+ch%4,vformat==PAL?0x00:0x00);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0xa4+ch%4,vformat==PAL?0x00:0x01);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x88+ch%4,vformat==PAL?0x4c:0x4c);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x8c+ch%4,vformat==PAL?0x84:0x84);
+video.c (extdrv\nvp6124):					nvp6124_write_table( nvp6124_slave_addr[ch/4], 0x00, vformat==PAL?NVP6124_B5678_25P_Buf:NVP6124_B5678_30P_Buf,254 );
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x24,vformat==PAL?0x2A:0x1A);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x50,vformat==PAL?0x84:0x86);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0xBB,vformat==PAL?0x00:0xE4);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x50+4*(ch%4),vformat==PAL?pn_value_fhd_pal[0]:pn_value_fhd_nt[0]);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x51+4*(ch%4),vformat==PAL?pn_value_fhd_pal[1]:pn_value_fhd_nt[1]);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x52+4*(ch%4),vformat==PAL?pn_value_fhd_pal[2]:pn_value_fhd_nt[2]);
+video.c (extdrv\nvp6124):					I2CWriteByte(nvp6124_slave_addr[ch/4], 0x53+4*(ch%4),vformat==PAL?pn_value_fhd_pal[3]:pn_value_fhd_nt[3]);
+video.c (extdrv\nvp6124):					printk("ch %d setted to 1080P %s\n", ch, vformat==PAL?"PAL":"NTSC");

@@ -1,0 +1,2 @@
+0x00000000	himedia_unregister	/opt/TM8721/package/drv/himedia/hi_media	EXPORT_SYMBOL
+0x00000000	himedia_register	/opt/TM8721/package/drv/himedia/hi_media	EXPORT_SYMBOL

@@ -1,0 +1,3 @@
+#!/bin/bash
+arm-hisiv100nptl-linux-gcc audiogain_ctl_test.c -o audiogain_ctl_test
+cp audiogain_ctl_test /home/linux01/nfs

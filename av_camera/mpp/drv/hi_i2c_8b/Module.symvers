@@ -1,0 +1,6 @@
+0x00000000	i2c_write	/home/users/linux23/av_camera/mpp/drv/hi_i2c_8b/hii2c	EXPORT_SYMBOL
+0x00000000	SetMicDigitalPotentiometer	/home/users/linux23/av_camera/mpp/drv/hi_i2c_8b/hii2c	EXPORT_SYMBOL
+0x00000000	ReadAudioOutDigitalPotentiometer	/home/users/linux23/av_camera/mpp/drv/hi_i2c_8b/hii2c	EXPORT_SYMBOL
+0x00000000	ReadMicDigitalPotentiometer	/home/users/linux23/av_camera/mpp/drv/hi_i2c_8b/hii2c	EXPORT_SYMBOL
+0x00000000	SetAudioOutDigitalPotentiometer	/home/users/linux23/av_camera/mpp/drv/hi_i2c_8b/hii2c	EXPORT_SYMBOL
+0x00000000	i2c_read	/home/users/linux23/av_camera/mpp/drv/hi_i2c_8b/hii2c	EXPORT_SYMBOL

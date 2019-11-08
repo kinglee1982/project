@@ -1,0 +1,1 @@
+cmd_/opt/TM8721/package/drv/hiuser/hiuser.o := /opt/hisi-linux/x86-arm/arm-hisiv300-linux/bin/arm-hisiv300-linux-uclibcgnueabi-ld -EL    -r -o /opt/TM8721/package/drv/hiuser/hiuser.o /opt/TM8721/package/drv/hiuser/cache-l1.o /opt/TM8721/package/drv/hiuser/hi_user.o 
